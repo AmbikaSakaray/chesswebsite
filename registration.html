@@ -1,94 +1,133 @@
-<section id="register" class="py-28">
-
-  <div class="max-w-7xl mx-auto px-6">
-
-    <!-- Heading -->
-    <div class="text-center mb-20">
-      <p class="font-mono text-gold/60 uppercase tracking-widest mb-3">
-        Join Tournament
-      </p>
-
-      <h2 class="font-display text-6xl font-bold">
-        Register & <span class="italic text-gold">Contact</span>
-      </h2>
-    </div>
-
-    <div class="grid lg:grid-cols-2 gap-16">
-
-      <!-- Registration Form -->
-      <div>
-
-        <h3 class="font-display text-3xl mb-6">
-          Player Registration
-        </h3>
-
-        <div class="space-y-5">
-
-          <input type="text"
-            placeholder="First Name"
-            class="w-full px-4 py-3 bg-charcoal border border-ivory/10">
-
-          <input type="text"
-            placeholder="Last Name"
-            class="w-full px-4 py-3 bg-charcoal border border-ivory/10">
-
-          <input type="email"
-            placeholder="Email"
-            class="w-full px-4 py-3 bg-charcoal border border-ivory/10">
-
-          <input type="number"
-            placeholder="FIDE ELO"
-            class="w-full px-4 py-3 bg-charcoal border border-ivory/10">
-
-          <button class="w-full py-4 bg-gold text-obsidian font-mono uppercase">
-            Confirm Registration
-          </button>
-
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration | Royal Gambit</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ["Georgia", "serif"],
+            body: ["Inter", "ui-sans-serif", "system-ui"]
+          },
+          colors: {
+            ink: "#171513",
+            ivory: "#f7f1e5",
+            bronze: "#b68b4c",
+            garnet: "#7a1f2b",
+            forest: "#123b33"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-ivory text-ink antialiased">
+  <header class="sticky top-0 z-40 border-b border-stone-200 bg-ivory/90 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
+      <a href="index.html" class="font-display text-2xl font-bold">Royal Gambit</a>
+      <div class="hidden items-center gap-7 text-sm font-semibold md:flex">
+        <a href="index.html" class="hover:text-garnet">Home</a>
+        <a href="about_players.html" class="hover:text-garnet">Players</a>
+        <a href="registration.html" class="text-garnet">Registration</a>
+        <a href="schedule-leaderboard.html" class="hover:text-garnet">Schedule</a>
       </div>
+      <a href="schedule-leaderboard.html" class="rounded-full bg-ink px-5 py-3 text-sm font-bold text-white transition hover:bg-garnet">Rounds</a>
+    </nav>
+  </header>
 
-      <!-- Contact -->
-      <div>
-
-        <h3 class="font-display text-3xl mb-6">
-          Contact
-        </h3>
-
-        <div class="space-y-5">
-
-          <div class="border border-gold/10 p-5">
-            <p class="font-mono text-xs text-gold/60 uppercase">
-              Email
-            </p>
-
-            <p class="text-xl">
-              info@kingsgambit.org
-            </p>
-          </div>
-
-          <div class="border border-gold/10 p-5">
-            <p class="font-mono text-xs text-gold/60 uppercase">
-              Phone
-            </p>
-
-            <p class="text-xl">
-              +91 40 1234 5678
-            </p>
-          </div>
-
-          <div class="border border-gold/10 p-5">
-            <p class="font-mono text-xs text-gold/60 uppercase">
-              Venue
-            </p>
-
-            <p class="text-xl">
-              Hyderabad Palace Hall
-            </p>
-          </div>
-
-        </div>
+  <main>
+    <section class="relative overflow-hidden bg-ink text-white">
+      <img src="https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&w=1700&q=85" alt="Chess clock beside chess pieces" class="absolute inset-0 h-full w-full object-cover opacity-35" />
+      <div class="relative mx-auto max-w-7xl px-5 py-20 lg:px-8">
+        <p class="text-sm font-bold uppercase tracking-[0.22em] text-bronze">Registration</p>
+        <h1 class="mt-3 max-w-3xl font-display text-5xl font-bold leading-tight sm:text-6xl">Reserve your seat at the board.</h1>
+        <p class="mt-6 max-w-2xl text-lg leading-8 text-white/78">Submit your player information, rating details, and preferred section. The organizing team will confirm entry after review.</p>
       </div>
+    </section>
 
-    </div>
-  </div>
-</section>
+    <section class="mx-auto grid max-w-7xl gap-8 px-5 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
+      <form class="rounded-lg border border-stone-200 bg-white p-6 shadow-sm sm:p-8">
+        <div class="grid gap-5 sm:grid-cols-2">
+          <label class="block">
+            <span class="text-sm font-bold">Full Name</span>
+            <input type="text" placeholder="Enter player name" class="mt-2 w-full rounded-lg border border-stone-300 bg-ivory px-4 py-3 outline-none transition focus:border-bronze focus:ring-4 focus:ring-bronze/20" />
+          </label>
+          <label class="block">
+            <span class="text-sm font-bold">Email Address</span>
+            <input type="email" placeholder="player@example.com" class="mt-2 w-full rounded-lg border border-stone-300 bg-ivory px-4 py-3 outline-none transition focus:border-bronze focus:ring-4 focus:ring-bronze/20" />
+          </label>
+          <label class="block">
+            <span class="text-sm font-bold">Phone Number</span>
+            <input type="tel" placeholder="+91 90000 00000" class="mt-2 w-full rounded-lg border border-stone-300 bg-ivory px-4 py-3 outline-none transition focus:border-bronze focus:ring-4 focus:ring-bronze/20" />
+          </label>
+          <label class="block">
+            <span class="text-sm font-bold">FIDE / National ID</span>
+            <input type="text" placeholder="Optional ID number" class="mt-2 w-full rounded-lg border border-stone-300 bg-ivory px-4 py-3 outline-none transition focus:border-bronze focus:ring-4 focus:ring-bronze/20" />
+          </label>
+          <label class="block">
+            <span class="text-sm font-bold">Current Rating</span>
+            <input type="number" placeholder="e.g. 1840" class="mt-2 w-full rounded-lg border border-stone-300 bg-ivory px-4 py-3 outline-none transition focus:border-bronze focus:ring-4 focus:ring-bronze/20" />
+          </label>
+          <label class="block">
+            <span class="text-sm font-bold">Tournament Section</span>
+            <select class="mt-2 w-full rounded-lg border border-stone-300 bg-ivory px-4 py-3 outline-none transition focus:border-bronze focus:ring-4 focus:ring-bronze/20">
+              <option>Open Championship</option>
+              <option>Under 1800</option>
+              <option>Junior Under 16</option>
+              <option>Blitz Side Event</option>
+            </select>
+          </label>
+          <label class="block sm:col-span-2">
+            <span class="text-sm font-bold">Playing Experience</span>
+            <textarea rows="5" placeholder="Mention recent tournaments, titles, or club details" class="mt-2 w-full rounded-lg border border-stone-300 bg-ivory px-4 py-3 outline-none transition focus:border-bronze focus:ring-4 focus:ring-bronze/20"></textarea>
+          </label>
+        </div>
+        <div class="mt-6 flex items-start gap-3">
+          <input type="checkbox" class="mt-1 h-4 w-4 rounded border-stone-300 text-garnet focus:ring-garnet" />
+          <p class="text-sm leading-6 text-stone-600">I agree to follow tournament rules, fair-play policies, and organizer instructions during the event.</p>
+        </div>
+        <button type="submit" class="mt-8 w-full rounded-full bg-garnet px-7 py-4 text-sm font-bold uppercase tracking-wide text-white shadow-lg shadow-garnet/20 transition hover:bg-ink">Submit Registration</button>
+      </form>
+
+      <aside class="space-y-6">
+        <div class="rounded-lg bg-forest p-8 text-white shadow-lg">
+          <p class="text-sm font-bold uppercase tracking-[0.22em] text-bronze">Entry Details</p>
+          <h2 class="mt-3 font-display text-3xl font-bold">Important dates</h2>
+          <div class="mt-6 space-y-5">
+            <div class="flex justify-between gap-4 border-b border-white/15 pb-4">
+              <span class="text-white/70">Early entry closes</span>
+              <strong>June 5</strong>
+            </div>
+            <div class="flex justify-between gap-4 border-b border-white/15 pb-4">
+              <span class="text-white/70">Final registration</span>
+              <strong>June 14</strong>
+            </div>
+            <div class="flex justify-between gap-4 border-b border-white/15 pb-4">
+              <span class="text-white/70">Pairings published</span>
+              <strong>June 17</strong>
+            </div>
+            <div class="flex justify-between gap-4">
+              <span class="text-white/70">Round one</span>
+              <strong>June 18</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-lg border border-stone-200 bg-white p-8 shadow-sm">
+          <h2 class="font-display text-3xl font-bold">Entry Fee</h2>
+          <p class="mt-4 text-5xl font-bold text-garnet">$75</p>
+          <p class="mt-3 text-sm leading-6 text-stone-600">Includes all classical rounds, digital certificate, tournament bulletin, refreshments, and closing ceremony access.</p>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="bg-ink px-5 py-8 text-center text-sm text-white/60">
+    <p>Royal Gambit Chess Championship • Registration desk closes before final pairings.</p>
+  </footer>
+</body>
+</html>
