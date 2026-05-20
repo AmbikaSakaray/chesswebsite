@@ -1,86 +1,100 @@
-<section id="players" class="py-28">
-
-  <div class="max-w-7xl mx-auto px-6">
-
-    <!-- Heading -->
-    <div class="text-center mb-20">
-      <p class="font-mono text-gold/60 uppercase tracking-widest mb-3">
-        About Tournament
-      </p>
-
-      <h2 class="font-display text-6xl font-bold">
-        A Century of <span class="italic text-gold">Mastery</span>
-      </h2>
-
-      <p class="text-xl text-ivory/50 mt-6 max-w-2xl mx-auto">
-        Since 1924, the world's greatest players have competed here.
-      </p>
-    </div>
-
-    <!-- About Cards -->
-    <div class="grid md:grid-cols-3 gap-6 mb-20">
-
-      <div class="p-8 border border-gold/10 bg-charcoal/40">
-        <div class="text-4xl text-gold mb-4">♛</div>
-        <h3 class="font-display text-2xl mb-3">Elite Format</h3>
-        <p class="text-ivory/50">
-          128 world-class players compete across 16 rounds.
-        </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Players | Royal Gambit</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ["Georgia", "serif"],
+            body: ["Inter", "ui-sans-serif", "system-ui"]
+          },
+          colors: {
+            ink: "#171513",
+            ivory: "#f7f1e5",
+            bronze: "#b68b4c",
+            garnet: "#7a1f2b",
+            forest: "#123b33"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-ivory text-ink antialiased">
+  <header class="sticky top-0 z-40 border-b border-stone-200 bg-ivory/90 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
+      <a href="index.html" class="font-display text-2xl font-bold">Royal Gambit</a>
+      <div class="hidden items-center gap-7 text-sm font-semibold md:flex">
+        <a href="index.html" class="hover:text-garnet">Home</a>
+        <a href="about_players.html" class="text-garnet">Players</a>
+        <a href="registration.html" class="hover:text-garnet">Registration</a>
+        <a href="schedule-leaderboard.html" class="hover:text-garnet">Schedule</a>
       </div>
+      <a href="registration.html" class="rounded-full bg-ink px-5 py-3 text-sm font-bold text-white transition hover:bg-garnet">Enter</a>
+    </nav>
+  </header>
 
-      <div class="p-8 border border-gold/10 bg-charcoal/40">
-        <div class="text-4xl text-gold mb-4">♔</div>
-        <h3 class="font-display text-2xl mb-3">Grand Prize</h3>
-        <p class="text-ivory/50">
-          $50,000 prize pool for the top champions.
-        </p>
+  <main>
+    <section class="mx-auto grid max-w-7xl gap-10 px-5 py-16 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:px-8">
+      <div>
+        <p class="text-sm font-bold uppercase tracking-[0.22em] text-garnet">Contenders</p>
+        <h1 class="mt-3 font-display text-5xl font-bold leading-tight sm:text-6xl">Meet the players shaping the board.</h1>
+        <p class="mt-6 text-lg leading-8 text-stone-700">From fearless juniors to seasoned masters, this field brings contrast, personality, and sharp preparation to every round.</p>
       </div>
+      <img src="https://images.unsplash.com/photo-1604948501466-4e9c339b9c24?auto=format&fit=crop&w=1200&q=85" alt="Chess player thinking during a match" class="h-[420px] w-full rounded-lg object-cover shadow-xl" />
+    </section>
 
-      <div class="p-8 border border-gold/10 bg-charcoal/40">
-        <div class="text-4xl text-gold mb-4">♜</div>
-        <h3 class="font-display text-2xl mb-3">Historic Venue</h3>
-        <p class="text-ivory/50">
-          Hosted in the iconic Hyderabad Palace Hall.
-        </p>
-      </div>
+    <section class="mx-auto max-w-7xl px-5 pb-20 lg:px-8">
+      <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <article class="overflow-hidden rounded-lg border border-stone-200 bg-white shadow-sm">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=700&q=85" alt="Portrait of Arjun Mehta" class="h-64 w-full object-cover" />
+          <div class="p-6">
+            <div class="flex items-center justify-between">
+              <h2 class="font-display text-2xl font-bold">Arjun Mehta</h2>
+              <span class="rounded-full bg-forest px-3 py-1 text-xs font-bold text-white">GM</span>
+            </div>
+            <p class="mt-2 text-sm font-semibold uppercase tracking-widest text-bronze">Rating 2618</p>
+            <p class="mt-4 text-sm leading-6 text-stone-600">A positional artist known for quiet squeezes, deep endgame pressure, and refusing unnecessary risk.</p>
+          </div>
+        </article>
 
-    </div>
+        <article class="overflow-hidden rounded-lg border border-stone-200 bg-white shadow-sm">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=700&q=85" alt="Portrait of Mira Novak" class="h-64 w-full object-cover" />
+          <div class="p-6">
+            <div class="flex items-center justify-between">
+              <h2 class="font-display text-2xl font-bold">Mira Novak</h2>
+              <span class="rounded-full bg-garnet px-3 py-1 text-xs font-bold text-white">IM</span>
+            </div>
+            <p class="mt-2 text-sm font-semibold uppercase tracking-widest text-bronze">Rating 2486</p>
+            <p class="mt-4 text-sm leading-6 text-stone-600">Dynamic, tactical, and dangerous with initiative. Her games rarely stay balanced for long.</p>
+          </div>
+        </article>
 
-    <!-- Players -->
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <article class="overflow-hidden rounded-lg border border-stone-200 bg-white shadow-sm">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=700&q=85" alt="Portrait of Leon Fischer" class="h-64 w-full object-cover" />
+          <div class="p-6">
+            <div class="flex items-center justify-between">
+              <h2 class="font-display text-2xl font-bold">Leon Fischer</h2>
+              <span class="rounded-full bg-ink px-3 py-1 text-xs font-bold text-white">FM</span>
+            </div>
+            <p class="mt-2 text-sm font-semibold uppercase tracking-widest text-bronze">Rating 2362</p>
+            <p class="mt-4 text-sm leading-6 text-stone-600">A relentless calculator who thrives in messy middlegames and sharp opposite-side attacks.</p>
+          </div>
+        </article>
 
-      <div class="player-card border border-gold/15">
-        <div class="h-48 flex items-center justify-center bg-charcoal">
-          <span class="text-8xl opacity-20">♔</span>
-        </div>
-
-        <div class="p-5">
-          <h3 class="font-display text-xl font-bold">
-            Magnus Reinhardt
-          </h3>
-
-          <p class="font-mono text-xs text-gold/60">
-            🇩🇪 GERMANY · GM
-          </p>
-        </div>
-      </div>
-
-      <div class="player-card border border-gold/15">
-        <div class="h-48 flex items-center justify-center bg-charcoal">
-          <span class="text-8xl opacity-20">♛</span>
-        </div>
-
-        <div class="p-5">
-          <h3 class="font-display text-xl font-bold">
-            Arjun Vishwanath
-          </h3>
-
-          <p class="font-mono text-xs text-gold/60">
-            🇮🇳 INDIA · GM
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+        <article class="overflow-hidden rounded-lg border border-stone-200 bg-white shadow-sm">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=85" alt="Portrait of Sana Rao" class="h-64 w-full object-cover" />
+          <div class="p-6">
+            <div class="flex items-center justify-between">
+              <h2 class="font-display text-2xl font-bold">Sana Rao</h2>
+              <span class="rounded-full bg-bronze px-3 py-1 text-xs font-bold text-ink">WIM</span>
+            </div>
+            <p class="mt-2 text-sm font-semibold uppercase tracking-widest text-bronze">Rating 2294</p>
+            <p class="mt-4 text-sm leading-6 text-stone-600">The youngest qualifier, already respected for fearless openings and resourceful defense.</p>
+          </div>
+        </article>
