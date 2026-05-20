@@ -1,86 +1,172 @@
-<section id="schedule" class="py-28 bg-charcoal/20">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Schedule & Leaderboard | Royal Gambit</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ["Georgia", "serif"],
+            body: ["Inter", "ui-sans-serif", "system-ui"]
+          },
+          colors: {
+            ink: "#171513",
+            ivory: "#f7f1e5",
+            bronze: "#b68b4c",
+            garnet: "#7a1f2b",
+            forest: "#123b33"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-ivory text-ink antialiased">
+  <header class="sticky top-0 z-40 border-b border-stone-200 bg-ivory/90 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
+      <a href="index.html" class="font-display text-2xl font-bold">Royal Gambit</a>
+      <div class="hidden items-center gap-7 text-sm font-semibold md:flex">
+        <a href="index.html" class="hover:text-garnet">Home</a>
+        <a href="about_players.html" class="hover:text-garnet">Players</a>
+        <a href="registration.html" class="hover:text-garnet">Registration</a>
+        <a href="schedule-leaderboard.html" class="text-garnet">Schedule</a>
+      </div>
+      <a href="registration.html" class="rounded-full bg-ink px-5 py-3 text-sm font-bold text-white transition hover:bg-garnet">Register</a>
+    </nav>
+  </header>
 
-  <div class="max-w-7xl mx-auto px-6">
+  <main>
+    <section class="mx-auto max-w-7xl px-5 py-16 lg:px-8">
+      <div class="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
+        <div>
+          <p class="text-sm font-bold uppercase tracking-[0.22em] text-garnet">Tournament Desk</p>
+          <h1 class="mt-3 font-display text-5xl font-bold leading-tight sm:text-6xl">Schedule and leaderboard.</h1>
+          <p class="mt-6 text-lg leading-8 text-stone-700">Follow each round, track the leaders, and keep an eye on board-one matchups as the championship pressure rises.</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1606594914767-d3e2e8380884?auto=format&fit=crop&w=1200&q=85" alt="Chess tournament room with players" class="h-80 w-full rounded-lg object-cover shadow-xl" />
+      </div>
+    </section>
 
-    <!-- Heading -->
-    <div class="text-center mb-20">
-      <p class="font-mono text-gold/60 uppercase tracking-widest mb-3">
-        Tournament Calendar
-      </p>
-
-      <h2 class="font-display text-6xl font-bold">
-        Schedule & <span class="italic text-gold">Standings</span>
-      </h2>
-    </div>
-
-    <div class="grid lg:grid-cols-5 gap-10">
-
-      <!-- Schedule -->
-      <div class="lg:col-span-3">
-
-        <h3 class="font-display text-3xl mb-6">
-          Match Schedule
-        </h3>
-
-        <div class="border border-gold/10">
-
-          <div class="grid grid-cols-12 px-4 py-3 bg-gold/5">
-            <span class="col-span-2">Time</span>
-            <span class="col-span-4">White</span>
-            <span class="col-span-2 text-center">VS</span>
-            <span class="col-span-4">Black</span>
+    <section class="mx-auto grid max-w-7xl gap-8 px-5 pb-20 lg:grid-cols-[0.95fr_1.05fr] lg:px-8">
+      <div class="rounded-lg border border-stone-200 bg-white p-6 shadow-sm sm:p-8">
+        <div class="mb-6 flex items-center justify-between gap-4">
+          <div>
+            <p class="text-sm font-bold uppercase tracking-[0.22em] text-bronze">Rounds</p>
+            <h2 class="mt-2 font-display text-3xl font-bold">Event Schedule</h2>
           </div>
-
-          <div class="grid grid-cols-12 px-4 py-4 border-t border-gold/5">
-            <span class="col-span-2">09:00</span>
-            <span class="col-span-4">Reinhardt</span>
-            <span class="col-span-2 text-center">⚔</span>
-            <span class="col-span-4">Petrov</span>
+          <span class="rounded-full bg-forest px-4 py-2 text-sm font-bold text-white">7 Rounds</span>
+        </div>
+        <div class="space-y-4">
+          <div class="grid gap-3 rounded-lg bg-ivory p-4 sm:grid-cols-[90px_1fr_auto] sm:items-center">
+            <strong class="text-garnet">June 18</strong>
+            <span>Opening ceremony and Round 1</span>
+            <span class="text-sm font-bold text-stone-500">6:30 PM</span>
           </div>
-
-          <div class="grid grid-cols-12 px-4 py-4 border-t border-gold/5">
-            <span class="col-span-2">09:00</span>
-            <span class="col-span-4">Vishwanath</span>
-            <span class="col-span-2 text-center">⚔</span>
-            <span class="col-span-4">Nakamura</span>
+          <div class="grid gap-3 rounded-lg bg-ivory p-4 sm:grid-cols-[90px_1fr_auto] sm:items-center">
+            <strong class="text-garnet">June 19</strong>
+            <span>Round 2 and Round 3</span>
+            <span class="text-sm font-bold text-stone-500">10:00 AM</span>
           </div>
-
+          <div class="grid gap-3 rounded-lg bg-ivory p-4 sm:grid-cols-[90px_1fr_auto] sm:items-center">
+            <strong class="text-garnet">June 20</strong>
+            <span>Round 4 and Blitz Exhibition</span>
+            <span class="text-sm font-bold text-stone-500">11:00 AM</span>
+          </div>
+          <div class="grid gap-3 rounded-lg bg-ivory p-4 sm:grid-cols-[90px_1fr_auto] sm:items-center">
+            <strong class="text-garnet">June 21</strong>
+            <span>Round 5 and Round 6</span>
+            <span class="text-sm font-bold text-stone-500">10:00 AM</span>
+          </div>
+          <div class="grid gap-3 rounded-lg bg-ivory p-4 sm:grid-cols-[90px_1fr_auto] sm:items-center">
+            <strong class="text-garnet">June 22</strong>
+            <span>Final Round and awards ceremony</span>
+            <span class="text-sm font-bold text-stone-500">2:00 PM</span>
+          </div>
         </div>
       </div>
 
-      <!-- Leaderboard -->
-      <div class="lg:col-span-2">
-
-        <h3 class="font-display text-3xl mb-6">
-          Leaderboard
-        </h3>
-
-        <div class="border border-gold/10">
-
-          <div class="grid grid-cols-12 px-4 py-3 bg-gold/5">
-            <span class="col-span-2">#</span>
-            <span class="col-span-6">Player</span>
-            <span class="col-span-2">PTS</span>
-            <span class="col-span-2">W</span>
+      <div class="rounded-lg bg-ink p-6 text-white shadow-xl sm:p-8">
+        <div class="mb-6 flex items-center justify-between gap-4">
+          <div>
+            <p class="text-sm font-bold uppercase tracking-[0.22em] text-bronze">Standings</p>
+            <h2 class="mt-2 font-display text-3xl font-bold">Live Leaderboard</h2>
           </div>
-
-          <div class="grid grid-cols-12 px-4 py-4 border-t border-gold/5">
-            <span class="col-span-2 rank-1">1</span>
-            <span class="col-span-6">Reinhardt</span>
-            <span class="col-span-2">7.5</span>
-            <span class="col-span-2">7-1</span>
-          </div>
-
-          <div class="grid grid-cols-12 px-4 py-4 border-t border-gold/5">
-            <span class="col-span-2 rank-2">2</span>
-            <span class="col-span-6">Vishwanath</span>
-            <span class="col-span-2">7.0</span>
-            <span class="col-span-2">6-1</span>
-          </div>
-
+          <span class="rounded-full bg-bronze px-4 py-2 text-sm font-bold text-ink">After R4</span>
+        </div>
+        <div class="overflow-hidden rounded-lg border border-white/15">
+          <table class="w-full text-left text-sm">
+            <thead class="bg-white/10 text-xs uppercase tracking-widest text-white/60">
+              <tr>
+                <th class="px-4 py-4">Rank</th>
+                <th class="px-4 py-4">Player</th>
+                <th class="px-4 py-4">Score</th>
+                <th class="px-4 py-4">TB</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-white/10">
+              <tr class="bg-bronze/15">
+                <td class="px-4 py-4 font-bold text-bronze">1</td>
+                <td class="px-4 py-4 font-semibold">Arjun Mehta</td>
+                <td class="px-4 py-4">3.5</td>
+                <td class="px-4 py-4">12.0</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-4 font-bold text-bronze">2</td>
+                <td class="px-4 py-4 font-semibold">Mira Novak</td>
+                <td class="px-4 py-4">3.0</td>
+                <td class="px-4 py-4">11.5</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-4 font-bold text-bronze">3</td>
+                <td class="px-4 py-4 font-semibold">Leon Fischer</td>
+                <td class="px-4 py-4">3.0</td>
+                <td class="px-4 py-4">10.0</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-4 font-bold text-bronze">4</td>
+                <td class="px-4 py-4 font-semibold">Sana Rao</td>
+                <td class="px-4 py-4">2.5</td>
+                <td class="px-4 py-4">9.5</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-4 font-bold text-bronze">5</td>
+                <td class="px-4 py-4 font-semibold">Mateo Silva</td>
+                <td class="px-4 py-4">2.5</td>
+                <td class="px-4 py-4">8.0</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
+    </section>
 
-    </div>
-  </div>
-</section>
+    <section class="bg-forest py-16 text-white">
+      <div class="mx-auto grid max-w-7xl gap-6 px-5 md:grid-cols-3 lg:px-8">
+        <div class="rounded-lg border border-white/15 bg-white/10 p-7">
+          <p class="text-sm uppercase tracking-widest text-white/60">Board One</p>
+          <h3 class="mt-3 font-display text-3xl font-bold">Mehta vs Novak</h3>
+          <p class="mt-3 text-sm leading-6 text-white/70">A classical clash between structure and initiative.</p>
+        </div>
+        <div class="rounded-lg border border-white/15 bg-white/10 p-7">
+          <p class="text-sm uppercase tracking-widest text-white/60">Best Game Prize</p>
+          <h3 class="mt-3 font-display text-3xl font-bold">$1,000</h3>
+          <p class="mt-3 text-sm leading-6 text-white/70">Awarded for creativity, accuracy, and practical courage.</p>
+        </div>
+        <div class="rounded-lg border border-white/15 bg-white/10 p-7">
+          <p class="text-sm uppercase tracking-widest text-white/60">Next Update</p>
+          <h3 class="mt-3 font-display text-3xl font-bold">9:30 PM</h3>
+          <p class="mt-3 text-sm leading-6 text-white/70">Pairings and standings refresh after arbiter confirmation.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-ink px-5 py-8 text-center text-sm text-white/60">
+    <p>Royal Gambit Chess Championship • Schedule and standings center.</p>
+  </footer>
+</body>
+</html>
